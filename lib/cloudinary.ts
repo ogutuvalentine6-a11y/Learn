@@ -14,7 +14,7 @@ export function generateUploadSignature(params: Record<string, string | number>)
     toSign,
     process.env.CLOUDINARY_API_SECRET as string
   );
-  return { signature, timestamp, ...toSign };
+  return { signature, ...toSign };
 }
 
 export async function deleteAsset(publicId: string) {
