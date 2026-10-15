@@ -12,4 +12,5 @@ const CertificateSchema = new Schema<ICertificate>(
   { timestamps: true }
 );
 
-export const Certificate = models.Certificate || model<ICertificate>("Certificate", CertificateSchema);
+export const Certificate =
+  models.Certificate || model<ICertificate>("Certificate", CertificateSchema);
